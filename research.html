@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+
+<!-- <header>
+    <h1>Dr. [Your Name]</h1>
+    <p>Professor of [Your Field] | [University/Institution Name]</p>
+</header> -->
+
+<nav>
+    <a href="index.html" >Home</a>
+    <div class="dropdown">
+        <a href="research.html"  class="dropbtn active" >Research</a>
+        <div class="dropdown-content">
+            <a href="#Papers">Papers</a>
+            <a href="#Talks">Talks</a>
+        </div>
+    </div>
+    <!-- <a href="para.html">Parametric Design</a> -->
+    <a href="teaching.html">Teaching</a>
+    <a href="docs/Bahar D Viniche_CV.pdf">CV</a>
+    <!-- <a href="Services.html">Services</a> -->
+</nav>
+
+<body>
+
+    <section id="Papers" class="container">
+        <!-- <img src="docs/truck.gif" alt="Photo of Dr. [Your Name]" class="profile-img" style="width: 10%; height: auto; border-radius: 50%;"> -->
+        <div class="text-content">
+            <h1>Preprint and Working Papers</h1>
+            <h2>Recipient-Dependent Last-Mile Delivery Routing with Autonomous Vehicle Applications</h2>
+            <p style="font-size: 20px;">
+                status: Submited to Transportation Science Journal after R&R
+            </p>
+            <h3 style="color: grey;">Bahar D Viniche, Mehdi Noruinejad, Opher Baron, Oded Berman</h3>
+            <p style="font-size: 18px;">
+                Last-mile delivery contributes to a drastic 28% of the total cost of shipping. Recent technological advance- ments enable recipients to participate in these deliveries, relieving the cost of this final leg of the supply chain. We present models of recipient-dependent routing policies in last-mile logistics. The policies are not limited to but are motivated by the future applications of autonomous vehicles in smart cities and their role in enabling recipient-dependent deliveries as they relinquish the need for drivers. The policies are based on scenarios where recipients use their AVs to pick up from (i) a central depot, (ii) a hub located by the logistics firm close to them (hybrid), and (iii) a hub and deliver to other nearby recipients (crowdsourcing). We compare the policies with status quo truck delivery and investigate the potential cost savings. The anal- ysis shows a robust dominance space pattern against key operational parameters. In particular, (i) status quo truck routing is the currently preferred delivery policy, (ii) the hybrid and crowdsourcing policies are a combination of AV and status quo truck policies in terms of dominance space, and (iii) recipient-dependent routing policies dominate the status quo truck policy as the number of recipients increases. We validate the insights from the stylized model with a case study of Walmart in Toronto.   
+            </p>
+            <!-- Subtle grey line -->
+            <hr style="border: none; border-top: 3px solid lightgrey; margin: 50px auto; width: 85%;">
+
+            <h2>Tactical Fleet Planning in Drone Enabled Deliveries</h2>
+            <p style="font-size: 20px;">
+                status: To be submitted soon to Production and Operation Management Journal
+            </p>
+            <h3 style="color: grey;">Bahar D Viniche, Mehdi Noruinejad, Opher Baron, Oded Berman</h3>
+            <p style="font-size: 18px;">
+                Drones offer substantial value to last-mile logistics in both road-congested urban areas and rural delivery locations by avoiding congested routes and follow aerial pathways at higher speeds. Strategically, integrating drones into an existing fleet requires a balanced assessment of reduced delivery times against the additional acquisition costs. We study the optimal fleet composition problem for multi-truck multi-drone parcel delivery by proposing a parametric design and providing strategic analyses. This research present models of drone-assisted delivery strategies where trucks travel from the central depot to designated hubs from which drones are launched and retrieved. This research bridges the gap of incorporating routing-based operational level constraints where the optimized routing strategy and fleet composition are introduced based on constraints such as drone flight range, payload capacities of trucks and drones, and their respective speeds. 
+                We introduce multi-launching of drones, where each truck can launch more than one drone at each launch hub, and drone re-launching, which allows a drone to return to the truck after finalizing a delivery, resupply, and launch for the next delivery, provided it remains within the flight range. We consider the synchronization of truck movements in terms of both minimizing the delivery time and a scheduling constraint to ensure the timely coordination between drones and their associated truck.
+                The analysis reveals three scenarios in which the delivery efficiency is constrained by i) the truck’s capacity, ii) the drone’s range, or iii) the timely coordination between trucks and drones. These results highlight technological limitations that hinder the efficiency of drone-enabled delivery, providing managerial insights about components that require improvement and when certain constraints become binding based on the current technology.
+            </p>
+            <!-- Subtle grey line -->
+            <hr style="border: none; border-top: 3px solid lightgrey; margin: 50px auto; width: 85%;">
+
+            <h2>Evaluating Drone-Delivery Efficiency in Different Urban Settings Using GNNs</h2>
+            <p style="font-size: 20px;">
+                status: Work in Progress
+            </p>
+            <h3 style="color: grey;">Bahar D Viniche, Mehdi Noruinejad, Opher Baron</h3>
+            <p style="font-size: 18px;">
+                Drones have the potential to shorten delivery times and alleviate challenges such as parking in dense urban areas or ensuring timely delivery to remote locations. Although drones promise faster and more cost-effective delivery, their efficiency varies across different urban settings, including city centers and suburban areas. We use ML techniques, in particular Graph Neural Network (GNN) to evaluate drone performance across these settings to address this. GNN is powerful framework for applying deep learning to graph-structured data, such as city networks. We use city structure data, delivery data, and socioeconomic data for each urban setting. We use OpenStreetMap for extracting urban structural data and constructing city representative networks. We measure drone delivery efficiency based on travel time and distance reduction data, for which we developed and leverage the <a href="https://dronesidekick.web.app/"> “Drone Sidekick Tool”</a>. This interactive tool allows the user to choose the location of the central depot and customers. It collects data on travel distance, travel time, and environmental impacts of drone delivery implementation. Combining this tool with the algorithmic approach, this research offers comprehensive insights into how drone delivery can transform urban logistics and supports the development of more efficient and adaptable delivery solutions.
+            </p>
+            <!-- Subtle grey line -->
+            <hr style="border: none; border-top: 3px solid lightgrey; margin: 50px auto; width: 85%;">
+
+            <h2>Equitable Territory Planning for Last-Mile Routing with Temporal Flexibility</h2>
+            <p style="font-size: 20px;">
+                status: Work in Progress
+            </p>
+            <h3 style="color: grey;">Bahar D Viniche, Ahana Malhorta, Elkafi Hassini, Mehdi Nourinejad</h3>
+            <p style="font-size: 18px;">
+                Optimizing last-mile logistics is a multifaceted challenge that significantly impacts both distributors and recipients. Traditional routing optimization focuses on minimizing time and cost, often overlooking sustainability and equity. This study introduces a comperhensive routing policy for last-mile delivery that balances these criteria with route flexibility and consistency of service territory for each driver to improve driver performance and customer satisfaction. We develop a strategic approach for territory planning under capacity constraint, and stochastic demand with known demand point locations. Considering workload balance prevents driver burnout and maintains high service quality. The model introduces the concept of “flex zones” to adjust driver workloads based on daily delivery demands and the concept of “core zones” to incorporate driver familiarity with territories. Integrating core and flex zones within each delivery territory minimizes delivery time while maintaining route flexibility and familiarity. This routing strategy improves overall delivery efficiency. The proposed framework is validated through detailed numerical simulation, demonstrating its potential to create a more adaptive and resilient last-mile delivery system.
+            </p>
+            <!-- Subtle grey line -->
+            <hr style="border: none; border-top: 3px solid lightgrey; margin: 50px auto; width: 85%;">
+
+        </div>
+    </section>
+    
+    <section id="Talks" class="container" >
+        <!-- <img src="docs/pallete.gif" alt="Photo of Dr. [Your Name]" class="profile-img" style="width: 10%; height: auto; border-radius: 50%;"> -->
+        <div class="text-content">
+            <h1> Talks</h1>
+            <!-- talk1 -->
+            <p style="margin: 5px 20px; position: relative; padding-left: 15px; margin-top: 20px;">
+                <span style="content: '•'; position: absolute; left: 0;">•</span>
+                INFORMS Annual Meeting, 2024, Seattle, US
+            </p>
+            <p style="margin: 5px 20px; position: relative; padding-left: 35px; padding-right: 260px; font-size: 18px;">
+                <!-- <span style="position: absolute; left: 20px;">-</span> -->
+                Strategic Fleet Composition and Efficiency Prediction for Drone-Enabled Last-Mile Delivery
+            </p>
+           
+            <!-- talk2 -->
+            <p style="margin: 5px 20px; position: relative; padding-left: 15px; margin-top: 20px;">
+                <span style="content: '•'; position: absolute; left: 0;">•</span>
+                Purdue Operations Conference, 2024, West Lafayette, US
+            </p>
+            <p style="margin: 5px 20px; position: relative; padding-left: 35px; padding-right: 260px; font-size: 18px;">
+                <!-- <span style="position: absolute; left: 20px;">-</span> -->
+                Tactical Fleet Planning in Drone Enabled Deliveries and Predicting Drone Delivery Efficiency in Urban Areas using GNNs
+            </p>
+
+            <!-- talk3 -->
+            <p style="margin: 5px 20px; position: relative; padding-left: 15px; margin-top: 20px;">
+                <span style="content: '•'; position: absolute; left: 0;">•</span>
+                informs Annual Meeting, 2023, Pheonix, US
+            </p>
+            <p style="margin: 5px 20px; position: relative; padding-left: 35px; padding-right: 260px; font-size: 18px;">
+                <!-- <span style="position: absolute; left: 20px;">-</span> -->
+                Tactical Fleet Planning in Drone-Enabled Deliveries
+            </p>
+
+            <!-- talk4 -->
+            <p style="margin: 5px 20px; position: relative; padding-left: 15px; margin-top: 20px;">
+                <span style="content: '•'; position: absolute; left: 0;">•</span>
+                Canadian Operational Research Society (CORS), 2023, Montreal, Canada
+            </p>
+            <p style="margin: 5px 20px; position: relative; padding-left: 35px; font-size: 18px;">
+                <!-- <span style="position: absolute; left: 20px;">-</span> -->
+                Autonomous Vehicle Applications in Recipient-Dependent Deliveries
+            </p>
+
+            <!-- talk5 -->
+            <p style="margin: 5px 20px; position: relative; padding-left: 15px; margin-top: 20px;">
+                <span style="content: '•'; position: absolute; left: 0;">•</span>
+                102nd Annual meeting of Transportation Research Board (TRB), 2023, Washington D.C., US
+            </p>
+            <p style="margin: 5px 20px; position: relative; padding-left: 35px; font-size: 18px;">
+                <!-- <span style="position: absolute; left: 20px;">-</span> -->
+                Fleet Composition Optimization in Drone Enabled Deliveries
+            </p>
+
+            <!-- talk6 -->
+            <p style="margin: 5px 20px; position: relative; padding-left: 15px; margin-top: 20px;">
+                <span style="content: '•'; position: absolute; left: 0;">•</span>
+                2023 Smart Freight Centre Symposium, Toronto, Canada
+            </p>
+            <p style="margin: 5px 20px; position: relative; padding-left: 35px; font-size: 18px;">
+                <!-- <span style="position: absolute; left: 20px;">-</span> -->
+                Interactive Drone Delivery Tool: Drone Sidekick
+            </p>
+
+            <!-- talk7 -->
+           
+            <p style="margin: 5px 20px; position: relative; padding-left: 15px; margin-top: 20px;">
+                <span style="content: '•'; position: absolute; left: 0;">•</span>
+                2023 CTRF Annual Conference Canadian Transportation Research Forum, Toronto, Canada
+            </p>
+            <p style="margin: 5px 20px; position: relative; padding-left: 35px; font-size: 18px;">
+                <!-- <span style="position: absolute; left: 20px;">-</span> -->
+                Truck and Drone Last-Mile Delivery Planning Tool: A Conceptual Framwork
+            </p>
+            <!-- talk8 -->
+            
+            <p style="margin: 5px 20px; position: relative; padding-left: 15px; margin-top: 20px;">
+                <span style="content: '•'; position: absolute; left: 0;">•</span>
+                Canadian Operational Research Society (CORS), 2022, Vancouver, Canada
+            </p>
+            <p style="margin: 5px 20px; position: relative; padding-left: 35px; font-size: 18px;">
+                <!-- <span style="position: absolute; left: 20px;">-</span> -->
+                Fleet Composition Optimization in Drone Enabled Deliveries
+            </p>
+
+            <!-- talk9 -->
+            <!-- <p style="margin: 5px 20px; position: relative; padding-left: 15px;">
+                <span style="content: '•'; position: absolute; left: 0;">•</span>
+                2024 Transportation Associateion of Canada (TAC), Vancouver, Canada
+            </p>
+            <p style="margin: 5px 20px; position: relative; padding-left: 35px; font-size: 18px;"> -->
+                <!-- <span style="position: absolute; left: 20px;">-</span> -->
+                <!-- Truck and Drone Last-Mile Delivery Planning: Drone Sidekick Tool
+            </p> -->
+
+            <!-- talk10 -->
+           
+            <p style="margin: 5px 20px; position: relative; padding-left: 15px; margin-top: 20px;">
+                <span style="content: '•'; position: absolute; left: 0;">•</span>
+                Third Annual Workshop on System Dynamics in Transportation Modelling, 2020, Palermo, Italy
+            </p>
+            <p style="margin: 5px 20px; position: relative; padding-left: 35px; font-size: 18px;">
+                <!-- <span style="position: absolute; left: 20px;">-</span> -->
+                Airline Dynamic Modeling for Uniform Development Based on Sub-Systems Dependencies
+            </p>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+   <!-- Contact Section -->
+   <section class="container contact-section">
+    <h2>Contact me at:</h2>
+    <div class="icon-row">
+        <a href="https://www.linkedin.com/in/bahar-d-viniche-b001b159/" target="_blank">
+            <i class="fab fa-linkedin" style="font-size: 45px;"></i>
+        </a>
+        <a href="mailto:bahardv@yorku.ca">
+            <i class="fas fa-envelope" style="font-size: 60px;"></i>
+        </a>
+        <a href="https://scholar.google.com/citations?user=HLSPJqgAAAAJ&hl=en" target="_blank">
+            <i class="fas fa-graduation-cap" style="font-size: 45px;"></i>
+        </a>
+    </div>
+</section>
+
+
+</body>
+
+</html>

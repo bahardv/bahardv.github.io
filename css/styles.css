@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding-left: 220px; /* Adds gap on the left side */
+    padding-top: 20px; /* Adds gap on the top */
+}
+
+
+.header-content {
+    display: flex;
+    align-items: baseline; /* Align the h1 and p text along the baseline */
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em; /* Adjust as needed */
+}
+
+.subtitle {
+    margin-left: 10px; /* Adjust spacing */
+    font-size: 0.75em; /* Smaller font size */
+    color: gray; /* Optional: makes it look subtler */
+}
+
+
+/* Adjusting the nav element */
+nav {
+    font-family: 'Roboto', sans-serif; /* Or try 'Open Sans', 'Montserrat', etc. */
+    font-size: large;
+    background: #3c043e; /* Blue color */
+    padding: 0; /* No vertical padding */
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Stretch to the full width of the screen */
+}
+
+/* Navigation links styling */
+nav a {
+    padding: 12px 24px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; /* Only change the text color on hover */
+}
+
+/* Hover effect: change text color */
+nav a:hover {
+    color: #ffcccb; /* Change this to your preferred hover color */
+}
+
+/* Active state with a white ribbon under the text */
+nav a.active {
+    border-bottom: 4px solid #ffffff; /* White ribbon underneath */
+}
+
+
+/* Container styling for profile section */
+.container {
+    display: flex; /* Creates a flexible container for child elements */
+    align-items: flex-start; /* Aligns items to the top of the container */
+    gap: 40px; /* Adds space between the profile image and text content */
+    padding: 10px; /* Adds padding inside the container */
+    background-color: #fff; /* Sets background color to white */
+    /* border-radius: 10px; 
+    border: 1px solid #ddd; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  */
+    width: 85%; /* Sets the width of the container */
+    margin: 20px auto; /* Centers the container on the page with top margin */
+    /* margin-left: 200px;
+    margin-right: 150px; */
+}
+
+.container img {
+    width: 100%; /* Sets the width of the profile image */
+    border-radius: 0%; /* Rounds the corners to create a circular shape */
+    padding-left: 80px;
+}
+
+.container h1 {
+    font-size: 34px; /* Sets the font size of the heading */
+    margin-bottom: 10px; /* Adds space below the heading */
+    font-family: Georgia, serif; /* Sets the font to Georgia */
+}
+
+.container h2 {
+    font-size: 24px; /* Sets the font size of the heading */
+    /* margin-bottom: 10px; */
+    font-family: Georgia, serif; /* Sets the font to Georgia */
+}
+
+.container h3 {
+    font-size: 22px; /* Sets the font size of the heading */
+    /* margin-bottom: 10px; */
+    font-family: Georgia, serif; /* Sets the font to Georgia */
+}
+
+.container p {
+    font-size: 20px; /* Sets the font size of the paragraph */
+    line-height: 1.6; /* Sets the line height for better readability */
+    text-align: justify; /* Makes the text justified */
+    /* margin-right: 120px; */
+    font-family: Georgia, serif; /* Sets the font to Georgia */
+}
+
+
+/* Contact section styling */
+.contact-section {
+    display: flex;
+    flex-direction: column; /* Stack heading and icons vertically */
+    align-items: center; /* Center content horizontally */
+    width: 100%; /* Adjust width as needed */
+    height: auto;
+    margin: auto;
+    border-radius: 0px; /* Optional: rounded corners */
+    /* Optional background color */
+    /* background-color: #f9f9f9; */
+}
+
+.contact-section h2 {
+    margin-bottom: 0px; /* Add spacing below the heading */
+    font-size: 20px; /* Adjust font size as needed */
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center; /* Center-align the heading text */
+}
+
+.icon-row {
+    display: flex; /* Keep icons in a row */
+    gap: 30px; /* Space between icons */
+}
+
+.contact-section a {
+    font-size: 24px;
+    color: #333; /* Adjust icon color */
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.contact-section a:hover {
+    color: #3c043e;
+}
+
+
+/* Basic dropdown container styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Styling for dropdown button */
+.dropbtn {
+    padding: 12px 24px; /* Same as nav links */
+    color: #fff; /* Matches nav link color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    display: inline-block; /* Ensures it behaves like a nav item */
+}
+
+/* Hover effect for the dropdown button */
+.dropbtn:hover {
+    background-color: #3c043e; /* Matches hover effect in nav */
+}
+
+/* Dropdown content styling */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3c043e; /* Same color as nav */
+    min-width: 100%; /* Matches the width of the dropdown button */
+    border-bottom: 4px solid #3c043e; /* Matches ribbon effect */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+/* Styling for the links inside the dropdown */
+.dropdown-content a {
+    padding: 12px 24px; /* Matches nav link padding */
+    color: #fff; /* Same color as nav links */
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for dropdown links */
+.dropdown-content a:hover {
+    background-color: #3c043e; /* Matches nav hover effect */
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+
