@@ -217,6 +217,82 @@ nav a.active {
     font-size: 18px !important;
 }
 
+/* ============ Research page ============ */
+
+.paper {
+    padding-bottom: 28px;
+    margin-bottom: 28px;
+    border-bottom: 3px solid lightgrey;
+}
+
+.paper:last-of-type {
+    border-bottom: none;
+}
+
+.paper-title {
+    margin: 0 0 10px 0;
+}
+
+/* Status pill: "Under review", "Working paper", "Work in progress" */
+.paper-status {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px !important;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #3c043e;
+    background: #f3ecf4;
+    border: 1px solid #e0cfe2;
+    border-radius: 3px;
+    padding: 3px 10px;
+    margin: 0 0 10px 0;
+    text-align: left !important;
+}
+
+.paper-status.published {
+    text-transform: none;
+    letter-spacing: 0;
+    color: #fff;
+    background: #3c043e;
+    border-color: #3c043e;
+}
+
+.paper-status.published a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.paper-authors {
+    font-size: 18px !important;
+    color: #666;
+    margin: 0 0 10px 0;
+    text-align: left !important;
+}
+
+.paper-summary {
+    font-size: 18px !important;
+    margin: 0;
+}
+
+.paper-note {
+    font-size: 17px !important;
+    color: #555;
+    font-style: italic;
+    margin: 10px 0 0 0;
+    text-align: left !important;
+}
+
+.talk-list > li {
+    margin-bottom: 14px;
+}
+
+.talk-list ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 2px 0 0 0;
+    color: #444;
+}
+
 /* ============ Responsive ============ */
 @media (max-width: 900px) {
     nav {
