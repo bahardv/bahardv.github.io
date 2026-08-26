@@ -145,6 +145,243 @@ nav a.active {
 }
 
 
+/* ============ Teaching page ============ */
+
+/* Block (non-flex) content section, indented like the rest of the site */
+.teaching-block {
+    display: block;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.teaching-block .text-content {
+    width: 100%;
+    max-width: 1050px; /* keeps line length readable on wide screens */
+}
+
+/* Role heading: "Course Instructor", "Teaching Assistant" */
+.role-heading {
+    text-decoration: underline;
+    margin-bottom: 4px;
+}
+
+/* Institution line under the role heading */
+.role-org {
+    margin: 0 0 12px 0;
+    font-size: 20px;
+    color: #444;
+}
+
+/* Course lists inherit the page's serif typography */
+.course-list {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 0 0 10px 0;
+    padding-left: 22px;
+}
+
+.course-list ul {
+    font-size: 18px;
+    margin: 6px 0 12px 0;
+    padding-left: 26px;
+    list-style-type: circle;
+}
+
+.course-list ul ul {
+    font-size: 17px;
+    list-style-type: square;
+}
+
+.course-list li {
+    margin-bottom: 6px;
+}
+
+.course-title,
+.program-title {
+    font-weight: bold;
+}
+
+.course-term {
+    color: #666;
+    font-style: italic;
+}
+
+.award-note {
+    font-size: 18px !important;
+    color: #3c043e;
+    margin: 0 0 14px 0;
+}
+
+.teaching-interests {
+    font-size: 18px !important;
+}
+
+/* ============ Research page ============ */
+
+.paper {
+    padding-bottom: 28px;
+    margin-bottom: 28px;
+    border-bottom: 3px solid lightgrey;
+}
+
+.paper:last-of-type {
+    border-bottom: none;
+}
+
+.paper-title {
+    margin: 0 0 10px 0;
+}
+
+/* Byline: "Working paper, with Sheng Liu and Nooshin Salari" */
+.paper-meta {
+    font-size: 18px !important;
+    color: #555;
+    margin: 0 0 8px 0;
+    text-align: left !important;
+}
+
+.paper-meta .status {
+    font-weight: bold;
+    color: #3c043e;
+}
+
+.paper-meta .status.published {
+    font-style: italic;
+}
+
+.paper-meta a {
+    color: #555;
+    text-decoration: none;
+    border-bottom: 1px dotted #b48fb8;
+}
+
+.paper-meta a:hover {
+    color: #3c043e;
+    border-bottom-style: solid;
+}
+
+/* Collapsed abstract */
+.paper-abstract {
+    margin-top: 10px;
+}
+
+.paper-abstract > summary {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #3c043e;
+    cursor: pointer;
+    list-style: none;          /* hide the default triangle */
+    display: inline-block;
+    padding: 3px 0;
+    user-select: none;
+}
+
+.paper-abstract > summary::-webkit-details-marker {
+    display: none;             /* Safari */
+}
+
+/* Custom caret that rotates when the section opens */
+.paper-abstract > summary::before {
+    content: '\25B8';          /* ▸ */
+    display: inline-block;
+    margin-right: 8px;
+    transition: transform 0.2s ease;
+}
+
+.paper-abstract[open] > summary::before {
+    transform: rotate(90deg);
+}
+
+.paper-abstract > summary:hover {
+    text-decoration: underline;
+}
+
+.paper-abstract p {
+    font-size: 18px !important;
+    margin: 8px 0 0 0;
+    padding-left: 18px;
+    border-left: 2px solid #e6dbe8;
+}
+
+/* Row of external links under a paper: preprint, journal article, tool */
+.paper-links {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px !important;
+    margin: 10px 0 0 0;
+    text-align: left !important;
+}
+
+.paper-links a {
+    color: #3c043e;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 1px solid #c9a9cc;
+    padding-bottom: 1px;
+}
+
+.paper-links a:hover {
+    border-bottom-color: #3c043e;
+}
+
+.paper-links .link-sep {
+    color: #aaa;
+    margin: 0 8px;
+}
+
+.paper-note {
+    font-size: 17px !important;
+    color: #555;
+    font-style: italic;
+    margin: 10px 0 0 0;
+    text-align: left !important;
+}
+
+.talk-list > li {
+    margin-bottom: 14px;
+}
+
+.talk-list ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 2px 0 0 0;
+    color: #444;
+}
+
+/* ============ Responsive ============ */
+@media (max-width: 900px) {
+    nav {
+        flex-wrap: wrap;
+    }
+
+    header {
+        padding-left: 20px;
+    }
+
+    .container {
+        width: 92%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .container img {
+        width: 70% !important;
+        padding-left: 0 !important;
+    }
+
+    .container p {
+        margin-right: 0 !important;
+        padding-right: 0 !important;
+        text-align: left; /* justified text leaves ugly gaps on narrow screens */
+    }
+
+    .teaching-block {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
 /* Basic dropdown container styling */
 .dropdown {
     position: relative;
@@ -196,9 +433,3 @@ nav a.active {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
-
-
-
-
-

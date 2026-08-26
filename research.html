@@ -29,6 +29,15 @@
 </nav>
 
 <!-- ===================== Papers ===================== -->
+<!--
+    Entry template:
+    <article class="paper">
+        <h2 class="paper-title">TITLE</h2>
+        <p class="paper-meta"><span class="status">STATUS</span>, with <a href="">Coauthor</a> and <a href="">Coauthor</a></p>
+        <p class="paper-links"><a href="" target="_blank">Preprint (SSRN)</a></p>
+        <details class="paper-abstract"><summary>Abstract</summary><p>TEXT</p></details>
+    </article>
+-->
 <section id="Papers" class="container teaching-block">
     <div class="text-content">
         <h1>Papers</h1>
@@ -36,102 +45,199 @@
         <!-- ---------- 1. AED (postdoc) ---------- -->
         <article class="paper">
             <h2 class="paper-title">Let AEDs Move: Urban Mobility Enhanced Defibrillator Deploymen</h2>
-            <p class="paper-status">Working paper</p>
-            <p class="paper-authors">Bahar D Viniche, Sheng Liu, Nooshin Salari</p>
-            <p class="paper-summary">
-                Timely access to automated external defibrillators (AEDs) remains a major limitation of public-access defibrillation systems because stationary AED networks cannot adapt to spatial and temporal variation in out-of-hospital cardiac arrest (OHCA) demand. 
-                We study a platform-enabled mobile AED model in which AEDs are carried by existing urban ride-hailing fleets that can be dispatched to OHCA locations. Rather than assuming additional AED capacity, we hold the total AED supply fixed and compare alternative allocations between stationary and mobile deployment, 
-                including hybrid policies that retain both forms of coverage. Our analysis leverages real-world urban data from New York City and Toronto, integrating georeferenced public AED inventories, EMS-reported OHCA incident data, and ride-hailing mobility data.
-                The results show that mobile AEDs can substantially improve both response times and reliability, but the benefits depend on how AED capacity is divided between stationary and mobile deployment. In New York City, average response-time gains exceed 2.5 minutes and peak when approximately 55–70\% of AED capacity is mobile; 
-                beyond this range, both gains and reliability decline as stationary coverage is reduced. In Toronto, average gains approach 4 minutes and then plateau as the system moves toward a fully mobile configuration. 
-                These contrasting patterns show that mobile AEDs can materially improve access, but the best stationary–mobile mix must be tailored to local coverage and mobility conditions.
+            <p class="paper-meta">
+                <span class="status">Working paper</span>, with
+                <a href="https://sites.google.com/site/thushengliu/home" target="_blank">Sheng Liu</a> and
+                <a href="https://ddoor.ca/nooshin.html" target="_blank">Nooshin Salari</a>
             </p>
+            <details class="paper-abstract">
+                <summary>Abstract</summary>
+                <p>
+                    Out-of-hospital cardiac arrest survival depends on how fast a defibrillator reaches the patient, and
+                    fixed AED placement leaves large parts of a city uncovered. We study a mobile AED network in which
+                    ride-hailing vehicles carry the devices, combining data-driven demand estimation with optimization of
+                    how many devices to deploy, which vehicles to equip, and how to dispatch them under real-time
+                    availability.
+                </p>
+            </details>
         </article>
 
         <!-- ---------- 2. Drone paper ---------- -->
         <article class="paper">
             <h2 class="paper-title">Tactical Routing and Fleet Planning in Drone-Assisted Last-Mile Delivery</h2>
-            <p class="paper-status">Under review</p>
-            <p class="paper-authors">Bahar D Viniche, Opher Baron, Oded Berman, Mehdi Nourinejad</p>
-            <p class="paper-summary">
-                We study optimal routing and fleet composition in drone-assisted delivery, where trucks travel to
-                designated hubs from which drones are launched and retrieved. Using a continuous approximation paradigm
-                and parametric design, we derive closed-form expressions for the routing decision variables and the
-                optimal fleet composition under operational constraints including drone flight range, truck and drone
-                capacity, and truck&ndash;drone synchronization. The analysis identifies policy regions defined by the
-                truck-to-drone speed ratio, flight range, and truck capacity.
+            <p class="paper-meta">
+                <span class="status">Under review</span>, with
+                <a href="https://discover.research.utoronto.ca/10004-opher-baron" target="_blank">Opher Baron</a>,
+                <a href="https://discover.research.utoronto.ca/12113-oded-berman" target="_blank">Oded Berman</a> and
+                <a href="https://lassonde.yorku.ca/users/mehdi-nourinejad" target="_blank">Mehdi Nourinejad</a>
             </p>
             <p class="paper-links">
                 <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5117161" target="_blank">Preprint (SSRN)</a>
             </p>
+            <details class="paper-abstract">
+                <summary>Abstract</summary>
+                <p>
+                    Drones bring substantial value to the last-mile logistics sector by avoiding congested routes and
+                    following aerial pathways at higher speeds. Strategically, the decision to incorporate drones into
+                    the existing fleet requires a balanced assessment of the benefits of reduced delivery time against
+                    operational constraints and acquisition expenses. We formulate a problem of optimal routing and
+                    fleet composition in drone-assisted delivery, providing a comprehensive assessment of drone
+                    characterization and operational constraints on delivery performance. We consider a drone-assisted
+                    delivery setting whereby trucks travel to designated hubs from which drones are launched and
+                    retrieved.
+                </p>
+                <p>
+                    We adopt the continuous approximation (CA) paradigm, using a continuous distribution of recipients
+                    to minimize total delivery time and fleet configuration. We use CA to approximate expected delivery
+                    distances in stylized settings and analyze the effect of operational constraints, including drone
+                    range, truck and drone capacity, and their synchronization, on delivery performance. We use
+                    parametric design to capture the complexities of strategic planning to optimize routing strategies,
+                    hub location-allocation, and fleet composition, and we obtain closed-form expressions for the
+                    routing strategy decision variables and the optimal fleet composition.
+                </p>
+                <p>
+                    This research bridges the gap between incorporating routing-based operational-level constraints,
+                    such as drone flight range, coordination of truck routes with drone trajectories, and the potential
+                    for launching multiple drones from a single hub. The study identifies policy regions based on the
+                    operational parameters of the delivery model, including the truck-to-drone speed ratio, flight
+                    range, and truck capacity. The policy spaces developed in this study analyze system efficiency under
+                    varying conditions and guide strategic decisions to optimize fleet composition and routing
+                    strategies based on technological advancements and operational parameters.
+                </p>
+            </details>
         </article>
 
         <!-- ---------- 3. AV paper ---------- -->
         <article class="paper">
             <h2 class="paper-title">Recipient-Dependent Last-Mile Delivery Routing with Autonomous Vehicle Applications</h2>
-            <p class="paper-status">Under review</p>
-            <p class="paper-authors">Bahar D Viniche, Mehdi Nourinejad, Opher Baron, Oded Berman</p>
-            <p class="paper-summary">
-                We model last-mile routing policies in which recipients participate in the delivery, motivated by
-                autonomous vehicles that remove the need for a driver: recipients pick up from a central depot, from a
-                hub the firm locates near them (hybrid), or from a hub and deliver onward to nearby recipients
-                (crowdsourcing). Comparing these against status quo truck delivery yields a robust dominance-space
-                pattern in the key operational parameters, with recipient-dependent policies dominating as the number of
-                recipients grows. Insights from the stylized model are validated on a Walmart case study in Toronto.
+            <p class="paper-meta">
+                <span class="status">Under review</span>, with
+                <a href="https://lassonde.yorku.ca/users/mehdi-nourinejad" target="_blank">Mehdi Nourinejad</a>,
+                <a href="https://discover.research.utoronto.ca/10004-opher-baron" target="_blank">Opher Baron</a> and
+                <a href="https://discover.research.utoronto.ca/12113-oded-berman" target="_blank">Oded Berman</a>
             </p>
             <p class="paper-links">
                 <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4617827" target="_blank">Preprint (SSRN)</a>
             </p>
+            <details class="paper-abstract">
+                <summary>Abstract</summary>
+                <p>
+                    Last-mile delivery contributes to a drastic 28% of the total cost of shipping. Recent technological
+                    advancements enable recipients to participate in these deliveries, relieving the cost of this final
+                    leg of the supply chain. We present models of recipient-dependent routing policies in last-mile
+                    logistics. The policies are not limited to but are motivated by the future applications of
+                    autonomous vehicles in smart cities and their role in enabling recipient-dependent deliveries as
+                    they relinquish the need for drivers. The policies are based on scenarios where recipients use their
+                    AVs to pick up from (i) a central depot, (ii) a hub located by the logistics firm close to them
+                    (hybrid), and (iii) a hub and deliver to other nearby recipients (crowdsourcing). We compare the
+                    policies with status quo truck delivery and investigate the potential cost savings. The analysis
+                    shows a robust dominance space pattern against key operational parameters. In particular, (i) status
+                    quo truck routing is the currently preferred delivery policy, (ii) the hybrid and crowdsourcing
+                    policies are a combination of AV and status quo truck policies in terms of dominance space, and
+                    (iii) recipient-dependent routing policies dominate the status quo truck policy as the number of
+                    recipients increases. We validate the insights from the stylized model with a case study of Walmart
+                    in Toronto.
+                </p>
+            </details>
         </article>
 
         <!-- ---------- 4. TR-C published ---------- -->
         <article class="paper">
             <h2 class="paper-title">Parametric Design of Time-Sensitive Routing with Recipient-Dependent Contributions</h2>
-            <p class="paper-status published">
-                Published &mdash; Transportation Research Part C: Emerging Technologies, 2025
-            </p>
-            <p class="paper-authors">Bahar D Viniche, Opher Baron, Oded Berman, Mehdi Nourinejad</p>
-            <p class="paper-summary">
-                We extend recipient-dependent delivery to perishable goods, where routes are length-constrained rather
-                than capacity-constrained because delivery time determines product quality. We give a parametric design
-                of truck, AV-pickup, and hybrid multi-echelon policies and characterize the optimal policy under
-                different cost structures: the status quo truck policy is dominated as the number of deliveries and the
-                hand-off cost increase. Results are validated on a Walmart delivery case in Toronto.
+            <p class="paper-meta">
+                <span class="status published">Published, Transportation Research Part C: Emerging Technologies, 2025</span>, with
+                <a href="https://discover.research.utoronto.ca/10004-opher-baron" target="_blank">Opher Baron</a>,
+                <a href="https://discover.research.utoronto.ca/12113-oded-berman" target="_blank">Oded Berman</a> and
+                <a href="https://lassonde.yorku.ca/users/mehdi-nourinejad" target="_blank">Mehdi Nourinejad</a>
             </p>
             <p class="paper-links">
                 <a href="https://www.sciencedirect.com/science/article/pii/S0968090X25002104" target="_blank">Journal article</a>
-                <!-- <span class="link-sep">&middot;</span>
-                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5018299" target="_blank">Preprint (SSRN)</a> -->
+                <span class="link-sep">&middot;</span>
+                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5018299" target="_blank">Preprint (SSRN)</a>
             </p>
+            <details class="paper-abstract">
+                <summary>Abstract</summary>
+                <p>
+                    Last-mile delivery complexities intensify for perishable goods, which must maintain quality, mainly
+                    when transported on non-refrigerated vehicles. If recipients are unavailable, delivery failure may
+                    prolong the delivery of perishable goods, thus jeopardizing their integrity. This study proposes
+                    recipient-dependent last-mile delivery solutions for perishable goods with time-sensitive delivery
+                    routes where the recipients contribute to the process. We explore applications of Autonomous
+                    Vehicles (AVs) in recipient-dependent deliveries of perishable goods and compare traditional truck
+                    delivery with a proposed AV pickup policy and other multi-echelon routing policies. We propose a
+                    parametric design of the policies, characterizing each policy by a set of variables inspired by the
+                    network design literature. In this study, routes are regarded as length-constrained, which is
+                    essential for the time-sensitive delivery of perishable goods. We compare the optimal cost of
+                    policies in length-bounding (time-sensitive) with capacity-bounding routes. A detailed dominance
+                    space analysis highlights the optimal policy under various cost structures and shows that the status
+                    quo for truck delivery is dominated as the number of deliveries increases. Increasing hand-off costs
+                    also lead to the dominance of AV and hybrid policies over traditional truck delivery. We validate
+                    the proposed managerial insights through a case study of a Walmart location delivery service in
+                    Toronto, proving the applicability of the models. This research contributes to the strategic
+                    integration of AVs in last-mile delivery of perishable goods.
+                </p>
+            </details>
         </article>
 
         <!-- ---------- 5. Equitable territory planning ---------- -->
         <article class="paper">
             <h2 class="paper-title">Equitable Territory Planning for Last-Mile Routing with Temporal Flexibility</h2>
-            <p class="paper-status">Work in progress</p>
-            <p class="paper-authors">Bahar D Viniche, Ahana Malhotra, Elkafi Hassini, Mehdi Nourinejad</p>
-            <p class="paper-summary">
-                Routing optimization typically minimizes time and cost while overlooking equity across drivers. We
-                develop a strategic territory planning approach under capacity constraints and stochastic demand that
-                balances delivery efficiency against workload equity and territory consistency, combining
-                &ldquo;core zones&rdquo; that preserve driver familiarity with &ldquo;flex zones&rdquo; that absorb
-                daily variation in demand.
+            <p class="paper-meta">
+                <span class="status">Work in progress</span>, with
+                Ahana Malhotra,
+                <a href="https://experts.mcmaster.ca/display/hassini" target="_blank">Elkafi Hassini</a> and
+                <a href="https://lassonde.yorku.ca/users/mehdi-nourinejad" target="_blank">Mehdi Nourinejad</a>
             </p>
             <p class="paper-note">Industry collaboration with Purolator and the Smart Freight Centre.</p>
+            <details class="paper-abstract">
+                <summary>Abstract</summary>
+                <p>
+                    Optimizing last-mile logistics is a multifaceted challenge that significantly impacts both
+                    distributors and recipients. Traditional routing optimization focuses on minimizing time and cost,
+                    often overlooking sustainability and equity. This study introduces a comprehensive routing policy
+                    for last-mile delivery that balances these criteria with route flexibility and consistency of
+                    service territory for each driver to improve driver performance and customer satisfaction. We
+                    develop a strategic approach for territory planning under capacity constraints and stochastic demand
+                    with known demand point locations. Considering workload balance prevents driver burnout and
+                    maintains high service quality. The model introduces the concept of &ldquo;flex zones&rdquo; to
+                    adjust driver workloads based on daily delivery demands and the concept of &ldquo;core zones&rdquo;
+                    to incorporate driver familiarity with territories. Integrating core and flex zones within each
+                    delivery territory minimizes delivery time while maintaining route flexibility and familiarity. This
+                    routing strategy improves overall delivery efficiency. The proposed framework is validated through
+                    detailed numerical simulation, demonstrating its potential to create a more adaptive and resilient
+                    last-mile delivery system.
+                </p>
+            </details>
         </article>
 
         <!-- ---------- 6. GNN drone efficiency ---------- -->
         <article class="paper">
             <h2 class="paper-title">Evaluating Drone-Delivery Efficiency in Different Urban Settings Using Graph Neural Networks</h2>
-            <p class="paper-status">Work in progress</p>
-            <p class="paper-authors">Bahar D Viniche, Mehdi Nourinejad, Opher Baron</p>
-            <p class="paper-summary">
-                Drone delivery pays off very differently in dense city centres than in suburban or remote areas. We
-                apply graph neural networks to city networks built from OpenStreetMap, together with delivery and
-                socioeconomic data, to predict where drone delivery yields the largest travel-time and distance
-                savings. Efficiency measures are generated with the
-                <a href="https://dronesidekick.web.app/" target="_blank">Drone Sidekick</a> tool.
+            <p class="paper-meta">
+                <span class="status">Work in progress</span>, with
+                <a href="https://lassonde.yorku.ca/users/mehdi-nourinejad" target="_blank">Mehdi Nourinejad</a> and
+                <a href="https://discover.research.utoronto.ca/10004-opher-baron" target="_blank">Opher Baron</a>
             </p>
+            <details class="paper-abstract">
+                <summary>Abstract</summary>
+                <p>
+                    Drones have the potential to shorten delivery times and alleviate challenges such as parking in
+                    dense urban areas or ensuring timely delivery to remote locations. Although drones promise faster
+                    and more cost-effective delivery, their efficiency varies across different urban settings, including
+                    city centres and suburban areas. We use machine learning techniques, in particular graph neural
+                    networks (GNNs), to evaluate drone performance across these settings. GNNs are a powerful framework
+                    for applying deep learning to graph-structured data such as city networks. We use city structure
+                    data, delivery data, and socioeconomic data for each urban setting, extracting urban structural data
+                    from OpenStreetMap to construct representative city networks. We measure drone delivery efficiency
+                    based on travel time and distance reduction data, for which we developed and leverage the
+                    <a href="https://dronesidekick.web.app/" target="_blank">Drone Sidekick</a> tool. This interactive
+                    tool allows the user to choose the location of the central depot and customers, and collects data on
+                    travel distance, travel time, and the environmental impacts of drone delivery implementation.
+                    Combining this tool with the algorithmic approach, this research offers comprehensive insights into
+                    how drone delivery can transform urban logistics and supports the development of more efficient and
+                    adaptable delivery solutions.
+                </p>
+            </details>
         </article>
 
     </div>
@@ -169,6 +275,11 @@
                 <span class="course-title">Canadian Operational Research Society (CORS) Annual Conference</span>
                 <span class="course-term">(2026, Kingston, Canada)</span>
                 <ul><li>Mobile Automated External Defibrillators (AED) Network Design Using Ride-Hailing Platforms</li></ul>
+            </li>
+            <li>
+                <span class="course-title">18th INFORMS Computing Society (ICS) Conference</span>
+                <span class="course-term">(2025, Toronto, Canada)</span>
+                <ul><li>Evaluating Drone-Delivery Ef(ciency in Different Urban Settings Using Graph Neural Networks (GNNs)</li></ul>
             </li>
             <li>
                 <span class="course-title">Manufacturing &amp; Service Operations Management (MSOM) Conference</span>
