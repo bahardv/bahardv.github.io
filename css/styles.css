@@ -11,6 +11,14 @@ header {
 }
 
 
+header h1 {
+    font-family: Georgia, serif;
+    font-weight: normal;
+    font-size: 2.2em;
+    letter-spacing: 0.03em;
+    color: #1f1f1f;
+}
+
 .header-content {
     display: flex;
     align-items: baseline; /* Align the h1 and p text along the baseline */
@@ -30,32 +38,36 @@ h1 {
 
 /* Adjusting the nav element */
 nav {
-    font-family: 'Roboto', sans-serif; /* Or try 'Open Sans', 'Montserrat', etc. */
-    font-size: large;
-    background: #3c043e; /* Blue color */
-    padding: 0; /* No vertical padding */
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    background: #ffffff;
+    border-bottom: 1px solid #e4e4e4;
+    padding: 4px 0;
     display: flex;
     justify-content: center;
-    width: 100%; /* Stretch to the full width of the screen */
+    width: 100%;
 }
 
 /* Navigation links styling */
 nav a {
-    padding: 12px 24px;
-    color: #fff;
+    padding: 14px 22px;
+    color: #2b2b2b;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s; /* Only change the text color on hover */
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
+    transition: color 0.3s, border-color 0.3s;
 }
 
 /* Hover effect: change text color */
 nav a:hover {
-    color: #ffcccb; /* Change this to your preferred hover color */
+    color: #8c8c8c;
 }
 
 /* Active state with a white ribbon under the text */
 nav a.active {
-    border-bottom: 4px solid #ffffff; /* White ribbon underneath */
+    border-bottom: 1px solid #2b2b2b;
 }
 
 
@@ -141,7 +153,7 @@ nav a.active {
 }
 
 .contact-section a:hover {
-    color: #3c043e;
+    color: #2b2b2b;
 }
 
 
@@ -209,7 +221,7 @@ nav a.active {
 
 .award-note {
     font-size: 18px !important;
-    color: #3c043e;
+    color: #2b2b2b;
     margin: 0 0 14px 0;
 }
 
@@ -243,7 +255,7 @@ nav a.active {
 
 .paper-meta .status {
     font-weight: bold;
-    color: #3c043e;
+    color: #2b2b2b;
 }
 
 .paper-meta .status.published {
@@ -253,11 +265,11 @@ nav a.active {
 .paper-meta a {
     color: #555;
     text-decoration: none;
-    border-bottom: 1px dotted #b48fb8;
+    border-bottom: 1px dotted #b5b5b5;
 }
 
 .paper-meta a:hover {
-    color: #3c043e;
+    color: #2b2b2b;
     border-bottom-style: solid;
 }
 
@@ -270,7 +282,7 @@ nav a.active {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 500;
-    color: #3c043e;
+    color: #2b2b2b;
     cursor: pointer;
     list-style: none;          /* hide the default triangle */
     display: inline-block;
@@ -302,7 +314,7 @@ nav a.active {
     font-size: 18px !important;
     margin: 8px 0 0 0;
     padding-left: 18px;
-    border-left: 2px solid #e6dbe8;
+    border-left: 2px solid #e6e6e6;
 }
 
 /* Row of external links under a paper: preprint, journal article, tool */
@@ -314,15 +326,15 @@ nav a.active {
 }
 
 .paper-links a {
-    color: #3c043e;
+    color: #2b2b2b;
     font-weight: 500;
     text-decoration: none;
-    border-bottom: 1px solid #c9a9cc;
+    border-bottom: 1px solid #c8c8c8;
     padding-bottom: 1px;
 }
 
 .paper-links a:hover {
-    border-bottom-color: #3c043e;
+    border-bottom-color: #2b2b2b;
 }
 
 .paper-links .link-sep {
@@ -390,46 +402,58 @@ nav a.active {
 
 /* Styling for dropdown button */
 .dropbtn {
-    padding: 12px 24px; /* Same as nav links */
-    color: #fff; /* Matches nav link color */
+    padding: 14px 22px;
+    color: #2b2b2b;
     text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s;
-    display: inline-block; /* Ensures it behaves like a nav item */
+    font-weight: 500;
+    display: inline-block;
 }
 
 /* Hover effect for the dropdown button */
 .dropbtn:hover {
-    background-color: #3c043e; /* Matches hover effect in nav */
+    color: #8c8c8c;
 }
 
 /* Dropdown content styling */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #3c043e; /* Same color as nav */
-    min-width: 100%; /* Matches the width of the dropdown button */
-    border-bottom: 4px solid #3c043e; /* Matches ribbon effect */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    min-width: 100%;
+    border: 1px solid #e4e4e4;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
     z-index: 1;
 }
 
 /* Styling for the links inside the dropdown */
 .dropdown-content a {
-    padding: 12px 24px; /* Matches nav link padding */
-    color: #fff; /* Same color as nav links */
+    padding: 12px 22px;
+    color: #2b2b2b;
     text-decoration: none;
     display: block;
-    font-weight: bold;
+    font-size: 13px;
     transition: background-color 0.3s;
 }
 
 /* Hover effect for dropdown links */
 .dropdown-content a:hover {
-    background-color: #3c043e; /* Matches nav hover effect */
+    background-color: #f5f5f5;
+    color: #2b2b2b;
 }
 
 /* Show the dropdown content on hover */
 .dropdown:hover .dropdown-content {
     display: block;
+}
+/* ============ Body links (monochrome) ============ */
+.container p a {
+    color: #2b2b2b;
+    text-decoration: underline;
+    text-decoration-color: #b5b5b5;
+    text-underline-offset: 3px;
+    transition: text-decoration-color 0.3s;
+}
+
+.container p a:hover {
+    text-decoration-color: #2b2b2b;
 }
